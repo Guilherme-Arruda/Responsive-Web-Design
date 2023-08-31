@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+
+body {
+  background-image: url(https://image.freepik.com/free-vector/abstract-background-with-lines-blend-form-waves_87426-21.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  color: white;
+}
+
+#description {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.span {
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+#survey-form {
+  background: rgb(27, 27, 50, 0.8);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+.paragraph {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+.form-control {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 10px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+#last-label-radio,
+#last-label-checkbox {
+  margin-bottom: 20px;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #37af65;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: #3ec572;
+}
+
+@media only screen and (max-width: 680px) {
+  #title {
+    font-size: 25px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  #survey-form {
+    max-width: 500px;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .form-control {
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .header {
+    margin-bottom: 10px;
+  }
+
+  #title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #description {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #survey-form {
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+  }
+}
